@@ -512,7 +512,7 @@ declare namespace Uno.UI {
          *
          * Note that the casing of this method is intentionally Pascal for platform alignment.
          */
-        SetDependencyPropertyValue(elementId: number, propertyName: string, propertyValue: string): string;
+        SetDependencyPropertyValue(elementId: number, propertyNameAndValue: string): string;
         /**
             * Remove the loading indicator.
             *
@@ -526,6 +526,7 @@ declare namespace Uno.UI {
         private resize;
         private dispatchEvent;
         private getIsConnectedToRootElement;
+        setCursor(cssCursor: string): string;
     }
 }
 declare class StorageFolderMakePersistentParams {
