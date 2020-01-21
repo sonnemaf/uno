@@ -18,11 +18,13 @@
 				<StackPanel>
 					<ToggleSwitch IsOn="{Binding [IsEnabled], Mode=TwoWay}"
                                   OnContent="TextBox is Enabled"
-                                  OffContent="TextBox is Disabled"/>
-                    <TextBlock Text="When TextBox is disabled and we should not be able to use it." />
+                                  OffContent="TextBox is Disabled"
+								  x:Name="ToggleSwitch" />
+					<TextBlock Text="When TextBox is disabled and we should not be able to use it." />
 					<TextBlock Text="Enter your Name"/>
-                    <TextBox IsEnabled="{Binding [IsEnabled]}"
-                             PlaceholderText="Name"/>
+					<TextBox IsEnabled="{Binding [IsEnabled]}"
+                             PlaceholderText="Name"
+							 x:Name="ToggleControlledTextBox" />
 				</StackPanel>
 			</DataTemplate>
 		</controls:SampleControl.SampleContent>

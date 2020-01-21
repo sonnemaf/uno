@@ -11,12 +11,12 @@
 
 	<StackPanel Margin="50">
 		<TextBox PlaceholderText="disables on letter f..."
-					 x:Name="DisableOnf"
+					 x:Name="DisableOnfTextBox"
 					 BeforeTextChanging="DisableOnf_BeforeTextChanging" />
-			<TextBox />
-			<TextBox IsEnabled="False" />
-			<TextBox IsEnabled="{Binding ElementName=EnabledCheckBox, Path=IsChecked}" />
-			<CheckBox x:Name="EnabledCheckBox" Content="Is last TextBox enabled?"
+		<TextBox />
+		<TextBox IsEnabled="False" />
+		<TextBox x:Name="DisabledWithCheckboxTextBox" IsEnabled="{Binding ElementName=EnabledCheckBox, Path=IsChecked}" />
+		<CheckBox x:Name="EnabledCheckBox" Content="Is last TextBox enabled?"
 					  IsChecked="True" />
-		</StackPanel>
+	</StackPanel>
 </UserControl>
