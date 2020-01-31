@@ -65,6 +65,7 @@
 - Fix invalid conversion when using ThemeResource (e.g. Color resource to Brush property)
 - Fix XamlBindingHelper.Convert double to GridLength
 - [Android] Adjust `TextBlock.TextDecorations` is not updating properly
+- #2570 [Android/iOS] fixed ObjectDisposedException in BindingPath
 
 ## Release 2.0
 
